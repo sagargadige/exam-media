@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+:root{
+    --heading-font:"Averia Sans Libre", sans-serif;
+    --pink-color:rgb(251, 100, 125);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+img{
+    width: 100%;
+    display: block;
+}
+ul{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-12{
+    width: 100%;
+    padding: 0 15px;
+}
+.col-6{
+    width: 50%;
+    padding: 0 15px;
+}
+.col-4{
+    width: 33.32%;
+    padding: 0 15px;
+}
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+.py-2{
+    padding: 2rem 0;
+}
+.px-2{
+    padding: 0 2rem;
+}
+
+.my-2{
+    margin: 2rem 0;
+}
+.mx-2{
+    margin: 0 2rem;
+}
+
+/* header start  */
+header{
+    padding: 1.5rem 0;
+    background-color: white;
+}
+header h2{
+    font-family: var(--heading-font);
+}
+header nav ul li{
+    padding: 0 15px;
+    font-family: sans-serif;
+}
+header nav a{
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+header nav a:hover{
+    color: var(--pink-color);
+}
+header nav i{
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+header nav i:hover{
+    color: red;
+}
+header .book-btn{
+    background-color: var(--pink-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    transition: 0.6s;
+    position: relative;
+}
+header .book-btn::after{
+    content: '\F479';
+    font-family: bootstrap-icons;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 120px;
+    top: 3px;
+    font-size: 20px;
+    color: black;
+    display: none;
+    visibility: hidden;
+}
+header .book-btn:hover{
+    background-color: black;
+    color: white;
+}
+/* header end  */
+
+/* hero start  */
+.hero{
+    background: url('../images/hero-bg.jpeg'),rgba(0, 0, 0, 0.763);
+    background-blend-mode: darken;
+    height: 90vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero h2{
+    font-size: 56px;
+    color: white;
+    font-family:var(--heading-font);
+}
+.hero h4{
+    font-size: 22px;
+    padding-top: 1rem;
+    color: white;
+    font-family:var(--heading-font);
+}
+.hero a{
+    background-color: white;
+    padding: 15px 25px;
+    margin-top: 90px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-family: sans-serif;
+    transition: 0.6s;
+}
+.hero a:hover{
+    background-color: rgba(0, 0, 0, 0.618);
+    color: white;
+}
+/* hero end  */
+/* cabin start  */
+.cabin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.cabin h2{
+    margin: 20px 0;
+    font-size: 44px;
+    font-family: var(--heading-font);
+}
+.cabin h2+p{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: sans-serif;
+}
+.adventure{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.adventure img{
+    border-radius: 15px;
+    /* padding: 30px; */
+    /* width: 80%; */
+}
+.adventure h3{
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+/* cabin end  */
+/* reservation start  */
+
+.reservation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.reservation form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.reservation{
+    background-color: rgb(190, 190, 190);
+}
+.reservation form input{
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+.form h2{
+    margin-bottom: 5px;
+    font-family: sans-serif;
+}
+.form .btn{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 20px;
+    padding: 5px 10px;
+    transition: 0.6s;
+}
+.form .btn:hover{
+    color: white;
+    background-color: gray;
+}
+/* reservation end  */
+/* footer start  */
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+footer ul li{
+    margin: 5px 0;
+}
+footer h2{
+    font-family: var(--heading-font);
+}
+footer ul li a{
+    font-family: var(--heading-font);
+    font-size: 12px;
+    transition: 0.3s;
+}
+footer ul li a:hover{
+    color: var(--pink-color);
+}
+footer p{
+    font-size: 18px;
+    margin-right: 5px;
+    transition: 0.3s;
+}
+footer p:hover{
+    color: var(--pink-color);
+}
+footer i{
+    font-size: 32px;
+    margin-left: 10px;
+}
+/* footer end  */

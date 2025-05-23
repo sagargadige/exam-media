@@ -1,0 +1,44 @@
+/* xl  */
+@media (max-width:1399px){
+    .container-xl{
+        max-width: 1320px;
+    }
+}
+/* lg  */
+@media (max-width:1199px){
+    .container-lg{
+        max-width: 1140px;
+    }
+}
+/* md  */
+@media (max-width:991px){
+    .container-md{
+        max-width: 960px;
+    }
+    .col-md-12{
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+/* sm  */
+@media (max-width:767px){
+    .container-sm{
+        max-width: 540px;
+
+    }
+    header .book-btn::after{
+        display: block;
+        visibility: visible;
+    }
+    nav{
+        visibility: hidden;
+        display: none;
+    }
+}
+/* xs  */
+@media (max-width:575px){
+    .container-xs{
+        max-width: 100%;
+
+    }
+}
